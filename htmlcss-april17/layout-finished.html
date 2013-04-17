@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    /* Outlines to make it clear what is going on. */
+    /* div {
+      outline: 1px solid blue;
+    }*/
+
+    body {
+      background-color: rgba(0, 0, 100, 0.02);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
+    h2 {
+      color: #ff0081;
+      margin: 0.3em 0;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      color: black;
+    }
+    a:hover {
+      color: #999;
+    }
+
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+
+    #main {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      overflow: hidden;
+    }
+    header .logo {
+      float: left;
+      width: 50px;
+      height: 50px;
+      margin-top: 4px;
+    }
+
+    nav {
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+    nav ul li {
+      float: left;
+      line-height: 1em;
+      margin: 0 5px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px 30px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: black;
+      background-color: #d9ff75;
+    }
+
+    section {
+      overflow: hidden;
+    }
+    .column {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 45%;
+      padding: 1%;
+      height: 650px;
+    }
+
+    .lipsum {
+      
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="main">
+
+  <header>
+    <img src="logo.png" class="logo">
+    <h1>Matt's Hyperinterweblinks</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="column left">
+      <h2>Favourite Sites</h2>
+
+      <ul>
+        <li><a href="http://thestar.tom/" target="_blank">Toronto Star</li>
+        <li><a href="http://news.ycombinator.com" target="_blank">Hacker News</a></li>
+        <li><a href="http://twg.ca" target="_blank">TWG</a></li>
+        <li><a href="http://twitter.com/" target="_blank">Twitter</a></li>
+      </ul>
+
+      <h2>TWG</h2>
+
+      <ul>
+        <li><a href="http://almost-scrum.twg.ca/" target="_blank">Almost Scrum</a></li>
+        <li><a href="https://pms.twg.ca/" target="_blank">PMS (Passwords)</a></li>
+        <li><a href="https://backups.twg.ca/" target="_blank">Backups.TWG.ca</a></li>
+        <li><a href="http://mail.theworkinggroup.ca" target="_blank">TWG Email</a></li>
+        <li><a href="https://drive.google.com/a/theworkinggroup.ca/" target="_blank">TWG Docs</a></li>
+        <li><a href="https://theworkinggroup.airbrake.io/" target="_blank">TWG Airbrake</a></li>
+      </ul>
+
+      <h2>Front-End</h2>
+
+      <ul>
+        <li><a href="http://www.quirksmode.org/css/" target="_blank">Quirksmode CSS Tables</a></li>
+      </ul>
+    </div>
+
+    <div class="column right">
+
+      <h2>Ruby</h2>
+
+      <ul>
+        <li><a href="http://www.ruby-doc.org/core-1.9.2/" target="_blank">Ruby 1.9.2 Docs</a></li>
+        <li><a href="http://www.zenspider.com/Languages/Ruby/QuickRef.html" target="_blank">Ruby QuickRef <em>**good**</em></a></li>
+      </ul>
+
+      <h2>Rails</h2>
+
+      <ul>
+        <li><a href="http://apidock.com/rails" target="_blank">Rails APIdock</a></li>
+        <li><a href="http://api.rubyonrails.org/" target="_blank">Rails API</a></li>
+        <li><a href="http://guides.rubyonrails.org/testing.html" target="_blank">Rails Guides: Testing</a></li>
+        <li><a href="http://guides.rubyonrails.org/asset_pipeline.html" target="_blank">Rails Guides: Asset Pipeline</a></li>
+        <li><a href="http://edgeguides.rubyonrails.org/" target="_blank">Rails EDGE Guides</a></li>
+        <li><a href="http://edgeguides.rubyonrails.org/4_0_release_notes.html" target="_blank">Rails 4.0 Release Notes (Edge)</a></li>
+        <li><a href="http://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html" target="_blank">Contributing to Rails (Edge)</a></li>
+      </ul>
+
+      <h2>Other</h2>
+
+      <ul>
+        <li><a href="https://github.com/nvie/gitflow" target="_blank">Github: nvie/<strong>gitflow</strong></a></li>
+        <li><a href="https://github.com/ruby/ruby" target="_blank">Ruby Source: ruby/<strong>ruby</strong></a></li>
+        <li><a href="https://github.com/rails/rails" target="_blank">Rails Source: rails/<strong>rails</strong></a></li>
+        <li><a href="https://github.com/bbatsov/rails-style-guide" target="_blank">bbatsov/<strong>rails-style-guide</strong></a></li>
+        <li><a href="https://github.com/bbatsov/ruby-style-guide" target="_blank">bbatsov/<strong>ruby-style-guide</strong></a></li>
+        <li><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter's Bootstrap</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <aside class="lipsum">
+    <h2>Lorem Ipsum</h2>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </aside>
+
+  <footer>
+    &copy; 2013 Me
+  </footer>
+</div>
+
+</body>
+</html>
