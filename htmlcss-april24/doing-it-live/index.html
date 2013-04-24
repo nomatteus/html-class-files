@@ -2,9 +2,21 @@
 <html>
 <head>
   <title>Matt's Page</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
   <style type="text/css">
     body {
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Lato', Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+    #main {
+      background-color: #efefef;
+      max-width: 960px;
+      min-width: 320px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 2%;
     }
 
     header {
@@ -20,8 +32,7 @@
     }
     nav ul li {
       float: left;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-right: 20px;
     }
     nav ul li a {
       display: block;
@@ -35,25 +46,83 @@
       background-color: #95cdff;
     }
 
+    .columns {
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .columns .column {
+      width: 45%;
+      padding: 2%;
+      border-radius: 6px;
+      background-color: #b8bcc2;
+    }
+    .columns .column.left {
+      float: left;
+    }
+    .columns .column.right {
+      float: right;
+    }
+
+    /* This is a comment */
+    footer {
+      margin-top: 40px;
+      color: #949da9;
+    }
 
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Matt's Website</h1>
-  </header>
+  <div id="main">
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-  </nav>
+    <header>
+      <h1>Matt's Website</h1>
+    </header>
 
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
 
+    <section>
+      <div class="columns">
+        <div class="column left">
+
+          <h2>Favourite Sites</h2>
+          <ul>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+            <li><a href="http://www.google.com/">Google</a></li>
+            <li><a href="http://www.thestart.com/">Toronto Star</a></li>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+          </ul>
+
+          <h2>Favourite Sites</h2>
+          <ul>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+            <li><a href="http://www.google.com/">Google</a></li>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+            <li><a href="http://www.thestar.com/">Toronto Star</a></li>
+          </ul>
+
+        </div>
+        <div class="column right">
+          I am the right column.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- This is a comment -->
+      &copy; 2013 Matt Ruten
+    </footer>
+
+  </div>
 
 </body>
 </html>
